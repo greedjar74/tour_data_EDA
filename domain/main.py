@@ -8,7 +8,7 @@ import os
 from PIL import Image
 
 from search_volume import search_volume
-from visitors_num import visitors_num
+from visitors import visitors
 
 def main_page():
     st.header('관광 데이터 분석')
@@ -21,7 +21,7 @@ def volume_EDA():
 def visitors_volume_EDA():
     st.write('## 지역 방문객수 분석')
     st.sidebar.write('지역 방문객수를 분석해보세요')
-    visitors_num()
+    visitors()
 
 # 딕셔너리 선언 {  ‘selectbox항목’ : ‘페이지명’ …  }
 page_names_to_funcs = {'Main Page': main_page, '관광지 검색량 분석': volume_EDA, '지역 방문객수 분석': visitors_volume_EDA}
