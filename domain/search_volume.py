@@ -7,7 +7,7 @@ import plotly.express as px
 def search_volume():
     color_list = ['#00b764', '#fe522a', '#22aed1', '#e472ba', '#424ec6']
 
-    path = '/Users/kimhongseok/eda_side_project/tour_EDA/data/문화빅데이터플랫폼/월별 검색량'
+    path = '/Users/kimhongseok/eda_side_project/tour_data_EDA/data/문화빅데이터플랫폼/월별 검색량'
     data_path_list = os.listdir(path)
     data_path_list.sort()
     data_path_list.pop(0)
